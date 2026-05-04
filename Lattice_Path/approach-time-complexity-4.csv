@@ -1,5 +1,0 @@
-﻿Approach,Time Complexity,Space Complexity,Best Use Case
-Combinatorics (nCr),O(n+m),O(n+m),"Large grids, multiple test cases"
-DP Table,"O(n \\cdot m)","O(n \\cdot m)",Small grids
-Recursion + Memo,"Exponential → Optimized to O(n \\cdot m)","O(n \\cdot m)",Learning recursion
-Pascal’s Triangle,"O(n \\cdot m)","O(n \\cdot m)",Alternative to factorials

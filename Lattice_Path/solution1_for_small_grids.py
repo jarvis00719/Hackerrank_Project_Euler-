@@ -7,20 +7,25 @@
 ## Total moves = 𝑛 + 𝑚.
 ##You just need to choose positions for downs (or rights).
 
-## Formula:- "Binomial coeffcient"
 
 import math 
 
 #!! Input Statements
 test_cases = int(input().strip())
  
+mod = 10**9 + 7
 for __ in range(test_cases):
     n, m = map(int, input().split())
 
     num = math.factorial(n + m)  
     den = math.factorial(n)* math.factorial(m)
+    
+    result = (num/den).__mod__(mod)
+    
+    print(int(result))
 
-    result = int(num/den)
-    print(result)
+##But this is only good for small grids; as factorals grow rapidly computing them is inefficient and sometimes impossible with large grids!!
+
+
 
 
